@@ -1,0 +1,86 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://background/stage1.jpg" type="Texture" id=1]
+[ext_resource path="res://robot/Robot.tscn" type="PackedScene" id=2]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 515, 41.9999 )
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 36.4504, 282.966 )
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 93.0306, 12.0834 )
+
+[node name="Main" type="Node2D"]
+
+[node name="stage1" type="Sprite" parent="."]
+position = Vector2( 512.662, 299.914 )
+scale = Vector2( 0.563311, 0.568048 )
+texture = ExtResource( 1 )
+
+[node name="Node2D" parent="." instance=ExtResource( 2 )]
+position = Vector2( 200.984, 524.688 )
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2( 512.481, 620.2 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+shape = SubResource( 1 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+position = Vector2( 5.72791, 340.81 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+position = Vector2( 1015.2, 331.336 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="."]
+position = Vector2( 954.149, 148.178 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D5"]
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+position = Vector2( 68.8859, 151.336 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+shape = SubResource( 2 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+position = Vector2( 88.1933, 571.421 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+position = Vector2( 1013.46, 569.316 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+shape = SubResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}

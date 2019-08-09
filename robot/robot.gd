@@ -73,7 +73,9 @@ func _animation():
 		else:
 			$AnimatedSprite.animation = "jump"
 	else:
-		if direction == 0 or (old_velocity.x > velocity.x + 0.1 or old_velocity.x < velocity.x - 0.1):
+		if old_velocity.x > velocity.x + 0.1 or old_velocity.x < velocity.x - 0.1:
+			$AnimatedSprite.animation = "idle_wall"
+		elif direction == 0:
 			$AnimatedSprite.animation = "idle"
 		else:
 			$AnimatedSprite.animation = "run" if running else "walk"

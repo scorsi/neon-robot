@@ -15,8 +15,8 @@ _global_script_class_icons={
 
 [application]
 
-config/name="Robot"
-run/main_scene="res://Main.tscn"
+config/name="Néon Robot"
+run/main_scene="res://levels/Main.tscn"
 config/icon="res://icon.png"
 
 [input]

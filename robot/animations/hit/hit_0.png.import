@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/stage1.jpg-725f46c7ed0b4e81443984dfe14764b7.stex"
+path="res://.import/hit_0.png-da615a728a1b29fcc6f6b84483ff0baa.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://background/stage1.jpg"
-dest_files=[ "res://.import/stage1.jpg-725f46c7ed0b4e81443984dfe14764b7.stex" ]
+source_file="res://robot/animations/hit/hit_0.png"
+dest_files=[ "res://.import/hit_0.png-da615a728a1b29fcc6f6b84483ff0baa.stex" ]
 
 [params]
 
